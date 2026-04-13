@@ -30,8 +30,14 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
+# 大型第三方库
+d3.v7.min.js
+
+# OMC 状态
+.omc/
+
+# 测试文件
+test-tooltip*.html
 
 # 备份文件
 *.bak
