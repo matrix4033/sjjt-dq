@@ -228,20 +228,34 @@ def static_files(filename):
     if ext and ext.lower() not in ALLOWED_EXTENSIONS:
         return jsonify({'error': 'File type not allowed'}), 403
     
-    # 允许访问登录页面相关的静态文件
-    if filename in ['login.html', 'css/main.css', 'js/auth.js']:
+    # 允许访问登录页面
+    if filename in ['login.html']:
         try:
-            return send_from_directory('../..', filename)
+            return send_from_directory('../../static', filename)
         except:
             return jsonify({'error': 'File not found'}), 404
-    
+
+    # 静态资源路径映射
+    static_paths = {
+        'src/': '../../src/',
+        'static/': '../../static/',
+    }
+
+    for path_prefix, dir_path in static_paths.items():
+        if filename.startswith(path_prefix):
+            actual_file = filename[len(path_prefix):]
+            try:
+                return send_from_directory(dir_path, actual_file)
+            except:
+                return jsonify({'error': 'File not found'}), 404
+
     # 其他文件需要认证
     if not is_authenticated():
         return redirect('/login.html')
-    
+
     try:
         # 尝试从根目录提供文件
-        return send_from_directory('..', filename)
+        return send_from_directory('../..', filename)
     except:
         # 如果文件不存在，返回 404
         return jsonify({'error': 'File not found'}), 404
