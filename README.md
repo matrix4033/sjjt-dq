@@ -42,22 +42,13 @@ install-windows.bat
 
 ### 快速指南
 
+- [Docker部署完整指南](Docker部署完整指南.md) - Docker 容器化部署
+- [Ubuntu快速部署](Ubuntu快速部署.md) - Ubuntu 快速部署
 - [部署指南总览](部署指南总览.md) - 所有部署选项
-- [Ubuntu快速部署](Ubuntu快速部署.md) - 5 分钟快速部署
-- [快速离线安装步骤](快速离线安装步骤.md) - 离线环境部署
 
-### 详细文档
+### 历史文档
 
-| 平台 | 文档 |
-|------|------|
-| Ubuntu | [Ubuntu部署指南.md](Ubuntu部署指南.md) |
-| CentOS | [CentOS离线部署指南.md](CentOS离线部署指南.md) |
-| Windows | [Windows部署指南.md](Windows部署指南.md) |
-| 通用 Linux | [Linux部署指南.md](Linux部署指南.md) |
-
-### 专题文档
-
-- [PostgreSQL部署指南](PostgreSQL部署指南.md) - 数据库配置
+旧版部署文档已归档至 `docs/archive/` 目录
 - [MySQL到PostgreSQL迁移指南](MySQL到PostgreSQL迁移指南.md) - 数据库迁移
 - [Python3.7离线安装完整指南](Python3.7离线安装完整指南.md) - Python 3.7 兼容
 
@@ -172,6 +163,7 @@ python3 import-csv-to-postgresql.py
 ├── css/                      # 样式文件
 ├── data/                     # CSV 样本数据
 ├── docs/                     # 实现文档
+│   └── archive/              # 历史归档文档
 ├── nginx/                    # Nginx 配置
 ├── systemd/                  # Systemd 服务配置
 ├── Dockerfile                # 主 Docker 镜像配置
