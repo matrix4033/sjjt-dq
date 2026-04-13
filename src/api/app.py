@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # 创建 Flask 应用，配置静态文件目录
-app = Flask(__name__, static_folder='../static', static_url_path='/static')
+app = Flask(__name__, static_folder='../../static', static_url_path='/static')
 CORS(app)  # 允许跨域请求
 
 # 会话配置
@@ -140,7 +140,7 @@ def index():
         return redirect('/login.html')
     
     try:
-        return send_file('../index.html')
+        return send_file('../../static/index.html')
     except:
         return jsonify({
             'success': True,
@@ -158,7 +158,7 @@ def index():
 def login_page():
     """提供登录页面"""
     try:
-        return send_file('../login.html')
+        return send_file('../../static/login.html')
     except:
         return '''
         <!DOCTYPE html>
@@ -231,7 +231,7 @@ def static_files(filename):
     # 允许访问登录页面相关的静态文件
     if filename in ['login.html', 'css/main.css', 'js/auth.js']:
         try:
-            return send_from_directory('..', filename)
+            return send_from_directory('../..', filename)
         except:
             return jsonify({'error': 'File not found'}), 404
     

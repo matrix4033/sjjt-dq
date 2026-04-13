@@ -7,7 +7,7 @@ WORKDIR /app
 # 设置环境变量
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
-    FLASK_APP=api/app.py \
+    FLASK_APP=src/api/app.py \
     FLASK_ENV=production
 
 # 配置清华大学 apt 镜像源并安装系统依赖
@@ -24,10 +24,10 @@ RUN echo "deb https://mirrors.tuna.tsinghua.edu.cn/debian/ trixie main contrib n
     && apt-get clean
 
 # 配置清华大学 pip 镜像源并安装 Python 依赖
-COPY api/requirements.txt /app/api/requirements.txt
+COPY src/api/requirements.txt /app/src/api/requirements.txt
 RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple/ && \
     pip config set install.trusted-host pypi.tuna.tsinghua.edu.cn && \
-    pip install --no-cache-dir -r api/requirements.txt
+    pip install --no-cache-dir -r src/api/requirements.txt
 
 # 复制应用代码
 COPY . /app/
@@ -45,4 +45,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:5000/api/health || exit 1
 
 # 启动命令
-CMD ["python", "api/app.py"]
+CMD ["python", "src/api/app.py"]
