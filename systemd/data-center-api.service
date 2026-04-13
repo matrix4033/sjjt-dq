@@ -1,0 +1,21 @@
+[Unit]
+Description=Data Center API Service
+After=network.target mysql.service
+Requires=mysql.service
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/data-center
+Environment="PATH=/var/www/data-center/api/venv/bin"
+ExecStart=/var/www/data-center/api/venv/bin/python /var/www/data-center/api/app.py
+Restart=always
+RestartSec=10
+
+# 日志配置
+StandardOutput=append:/var/log/data-center/api.log
+StandardError=append:/var/log/data-center/api-error.log
+
+[Install]
+WantedBy=multi-user.target

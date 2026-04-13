@@ -1,0 +1,48 @@
+# 使用 Python 3.12.12 官方镜像作为基础镜像
+FROM python:3.12.12-slim
+
+# 设置工作目录
+WORKDIR /app
+
+# 设置环境变量
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    FLASK_APP=api/app.py \
+    FLASK_ENV=production
+
+# 配置清华大学 apt 镜像源并安装系统依赖
+RUN echo "deb https://mirrors.tuna.tsinghua.edu.cn/debian/ trixie main contrib non-free non-free-firmware" > /etc/apt/sources.list && \
+    echo "deb https://mirrors.tuna.tsinghua.edu.cn/debian/ trixie-updates main contrib non-free non-free-firmware" >> /etc/apt/sources.list && \
+    echo "deb https://mirrors.tuna.tsinghua.edu.cn/debian-security trixie-security main contrib non-free non-free-firmware" >> /etc/apt/sources.list && \
+    apt-get update && \
+    apt-get install -y --no-install-recommends \
+    gcc \
+    libpq-dev \
+    curl \
+    netcat-openbsd \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean
+
+# 配置清华大学 pip 镜像源并安装 Python 依赖
+COPY api/requirements.txt /app/api/requirements.txt
+RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple/ && \
+    pip config set install.trusted-host pypi.tuna.tsinghua.edu.cn && \
+    pip install --no-cache-dir -r api/requirements.txt
+
+# 复制应用代码
+COPY . /app/
+
+# 创建非 root 用户
+RUN useradd --create-home --shell /bin/bash app && \
+    chown -R app:app /app
+USER app
+
+# 暴露端口
+EXPOSE 5000 8000
+
+# 健康检查
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD curl -f http://localhost:5000/api/health || exit 1
+
+# 启动命令
+CMD ["python", "api/app.py"]

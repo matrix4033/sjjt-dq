@@ -1,0 +1,74 @@
+# Git 相关
+.git
+.gitignore
+
+# Python 相关
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git
+.mypy_cache
+.pytest_cache
+.hypothesis
+
+# 虚拟环境
+api/venv/
+venv/
+ENV/
+env/
+.venv/
+
+# IDE 相关
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统相关
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 文档和说明文件
+*.md
+docs/
+
+# 部署脚本
+# *.sh
+# *.bat
+install-*
+deploy-*
+# start-*
+# stop-*
+
+# 数据文件
+*.csv
+data/
+
+# 配置文件（保留 .env.example）
+# .env
+
+# Kiro 相关
+.kiro/
+
+# 其他
+nginx/
+systemd/
