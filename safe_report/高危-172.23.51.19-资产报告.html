@@ -1,0 +1,2353 @@
+<!-- 网页head -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>资产漏洞评估报告</title>
+    <link rel="stylesheet" href="./static/styles/base.css">
+    <script type="text/javascript" src="./static/js/echart-custom@5.3.2.min.js"></script>
+    <script type="text/javascript" src="./static/js/index.js"></script>
+    <!-- <script type="text/javascript" src="./static/js/menu-data.js" ></script> -->
+    <script type="text/javascript" src="./static/js/menu.js"></script>
+    <script type="text/javascript" src="./static/js/charts.js"></script>
+    </link>
+    <style>
+        h2::after{
+            position:initial;
+        }
+    </style>
+</head>
+
+<body>
+<!-- 页头 -->
+<div class="header">
+    <div class="header-container">
+        <div class="header-left">
+            <!-- <img src="./static/images/logo.png" height="30" alt="logo" class="logo mr10" />  -->
+            <span class="header-title mr10">明鉴漏洞扫描系统</span>
+            <span class="header-version">V3.0</span>
+        </div>
+        <div class="header-right">
+            <span class="header-name mr10">资产漏洞评估报告</span>
+            <span class="header-data-time">2026-04-13 16:56:42</span>
+        </div>
+    </div>
+</div>
+<!-- 菜单 -->
+<div class="menu-context"></div>
+
+<!-- 主机信息 -->
+<div class="block">
+    <div class="container">
+        <div class="box">
+            <!-- 一级标题 -->
+            <h1 id="#1">
+                <div class="h1-title">
+                    1. 资产信息
+                </div>
+                <div class="line"></div>
+            </h1>
+            <div class="box-context">
+                <p class="desc">
+                    本次评估对象172.23.51.19采用全部漏洞扫描进行扫描，扫描到10个端口，发现网站应用0个，存在漏洞个数42个，高危及以上漏洞个数3个，主机安全评分为45分，可以判断当前被评估对象正面临的安全风险等级为非常危险，为了您的资产安全，请及时修复所发现的安全漏洞。
+                </p>
+                
+                <div class="table-container2">
+                    <table>
+                        <tr>
+                            <th>IP地址</th>
+                            <td>172.23.51.19</td>
+
+                            <th>操作系统</th>
+                            <td>Linux 4.15 - 5.19</td>
+                        </tr>
+                        <tr>
+                            <th>系统扫描模板</th>
+                            <td>全部漏洞扫描</td>
+                            <th>网站扫描模板</th>
+                            <td>两高一弱-高危漏洞</td>
+                        </tr>
+                        <tr>
+                            <th>系统版本</th>
+                            <td>V3.0R25C01SPC100</td>
+                            <th>时间统计</th>
+                            <td>
+                                开始时间：2026-04-07 19:00:04<br />
+                                结束时间：2026-04-07 22:20:08<br />
+                                扫描耗时：3小时20分4秒
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>系统策略版本</th>
+                            <td>V1.0.3769.0</td>
+                            <th>网站策略版本</th>
+                            <td>V1.3.2436.2061</td>
+                        </tr>
+                        <tr>
+                            <th>创建者</th>
+                            <td colspan="3">admin</td>
+                        </tr>
+                    </table>
+                </div>
+                    <div class="box">
+                        <!-- 二级标题 -->
+                        <h2 id="#1.1">
+                            1.1 资产信息
+                        </h2>
+                        <div class="box-context table-container">
+                            <table>
+                                <tr>
+                                    <th>网站URL</th>
+                                    <th width="100">紧急</th>
+                                    <th width="100">高危</th>
+                                    <th width="100">中危</th>
+                                    <th width="100">低危</th>
+                                    <th width="100">信息</th>
+                                    <th width="120">状态</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 脆弱账号 -->
+<div class="block">
+    <div class="container">
+        <div class="box">
+            <!-- 一级标题 -->
+            <h1 id="#2">
+                <div class="h1-title">
+                    2. 脆弱账号
+                </div>
+                <div class="line"></div>
+            </h1>
+            <div class="box-context">
+                <div class="box">
+                    <!-- 二级标题 -->
+                    <h2 id="#2.1">
+                        2.1 脆弱账号
+                    </h2>
+                    <div class="box-context table-container">
+                        <table>
+                            <tr>
+                                <th>主机IP</th>
+                                <th>用户名</th>
+                                <th>密码</th>
+                                <th>应用类型</th>
+                                <th>端口</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 漏洞信息 -->
+<div class="block">
+    <div class="container">
+        <div class="box">
+            <!-- 一级标题 -->
+            <h1 id="#3">
+                <div class="h1-title">
+                    3. 漏洞信息
+                </div>
+                <div class="line"></div>
+            </h1>
+            <div class="box-context no-max-height">
+                <div class="box">
+                    <!-- 二级标题 -->
+                    <h2 id="#3.1">
+                        3.1 系统漏洞概况
+                    </h2>
+                    <div class="box-context no-max-height table-container">
+                        <table>
+                            <tr>
+                                <th width="120">端口</th>
+                                <th width="100">协议</th>
+                                <th width="100">服务</th>
+                                <th width="100">版本</th>
+                                <th>漏洞</th>
+                                <th>检出方式</th>
+                            </tr>
+                                <tr>
+                                    <td rowspan="9">10000</td>
+                                    <td rowspan="9">tcp,http</td>
+                                    <td rowspan="9">--</td>
+                                    <td rowspan="9">--</td>
+                                            <td class="tal">
+                                                <span
+                                                    class="high-risk-icon  ">
+                                                    <a href="#115207" onclick="_goto()">
+                                                        SSL/TLS：远程主机支持RSA密钥交换(原理扫描)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="low-risk-icon ">
+                                                    <a href="#104964" onclick="_goto()">
+                                                        SSL/TLS: 自签名证书
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#100317" onclick="_goto()">
+                                                        服务器支持的SSL加密协议(原理扫描)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#SysDv0230" onclick="_goto()">
+                                                        远程服务器允许SSL会话恢复
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#SysDv0200" onclick="_goto()">
+                                                        获取目标SSL证书过期时间(原理扫描)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#SysDv0255" onclick="_goto()">
+                                                        允许Traceroute探测
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#80225" onclick="_goto()">
+                                                        HTTP Server类型和版本号
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#105011" onclick="_goto()">
+                                                        SSL/TLS: 收集并汇报证书详情
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#100316" onclick="_goto()">
+                                                        服务器加密通信支持的SSL加密算法(原理扫描)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1">0</td>
+                                    <td rowspan="1">--</td>
+                                    <td rowspan="1">--</td>
+                                    <td rowspan="1">--</td>
+                                            <td class="tal">
+                                                <span
+                                                    class="low-risk-icon  ">
+                                                    <a href="#67300" onclick="_goto()">
+                                                        ICMP时间戳检测(原理扫描)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1">8001</td>
+                                    <td rowspan="1">tcp</td>
+                                    <td rowspan="1">--</td>
+                                    <td rowspan="1">--</td>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon  ">
+                                                    <a href="#SysDv0255" onclick="_goto()">
+                                                        允许Traceroute探测
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1">9090</td>
+                                    <td rowspan="1">tcp</td>
+                                    <td rowspan="1">--</td>
+                                    <td rowspan="1">--</td>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon  ">
+                                                    <a href="#SysDv0255" onclick="_goto()">
+                                                        允许Traceroute探测
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="15">5010</td>
+                                    <td rowspan="15">tcp</td>
+                                    <td rowspan="15">--</td>
+                                    <td rowspan="15">3.12.12</td>
+                                            <td class="tal">
+                                                <span
+                                                    class="high-risk-icon  ">
+                                                    <a href="#595735" onclick="_goto()">
+                                                        CPython 安全漏洞(CVE-2025-8194)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="medium-risk-icon ">
+                                                    <a href="#622155" onclick="_goto()">
+                                                        CPython 安全漏洞(CVE-2025-15367)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="medium-risk-icon ">
+                                                    <a href="#609093" onclick="_goto()">
+                                                        CPython 安全漏洞(CVE-2025-6075)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="medium-risk-icon ">
+                                                    <a href="#622154" onclick="_goto()">
+                                                        CPython 安全漏洞(CVE-2026-0672)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="medium-risk-icon ">
+                                                    <a href="#622153" onclick="_goto()">
+                                                        CPython 安全漏洞(CVE-2026-0865)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="medium-risk-icon ">
+                                                    <a href="#622151" onclick="_goto()">
+                                                        CPython 安全漏洞(CVE-2026-1299)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="medium-risk-icon ">
+                                                    <a href="#622156" onclick="_goto()">
+                                                        CPython 安全漏洞(CVE-2025-15366)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="medium-risk-icon ">
+                                                    <a href="#622152" onclick="_goto()">
+                                                        CPython 安全漏洞(CVE-2025-12781)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="medium-risk-icon ">
+                                                    <a href="#622158" onclick="_goto()">
+                                                        CPython 安全漏洞(CVE-2025-11468)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="medium-risk-icon ">
+                                                    <a href="#577775" onclick="_goto()">
+                                                        Python 资源管理错误漏洞(CVE-2025-4516)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="medium-risk-icon ">
+                                                    <a href="#595712" onclick="_goto()">
+                                                        Python 安全漏洞(CVE-2025-6069)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="medium-risk-icon ">
+                                                    <a href="#622157" onclick="_goto()">
+                                                        CPython 安全漏洞(CVE-2025-15282)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="low-risk-icon ">
+                                                    <a href="#562473" onclick="_goto()">
+                                                        CPython 安全漏洞(CVE-2024-3220)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#80225" onclick="_goto()">
+                                                        HTTP Server类型和版本号
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#SysDv0255" onclick="_goto()">
+                                                        允许Traceroute探测
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">22</td>
+                                    <td rowspan="4">tcp</td>
+                                    <td rowspan="4">--</td>
+                                    <td rowspan="4">10.0</td>
+                                            <td class="tal">
+                                                <span
+                                                    class="low-risk-icon  ">
+                                                    <a href="#605406" onclick="_goto()">
+                                                        OpenSSH 安全漏洞(CVE-2025-61984)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="low-risk-icon ">
+                                                    <a href="#605416" onclick="_goto()">
+                                                        OpenSSH 安全漏洞(CVE-2025-61985)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>版本匹配</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#81902" onclick="_goto()">
+                                                        SSH协议支持的算法(原理扫描)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#80316" onclick="_goto()">
+                                                        SSH版本信息可被获取(原理扫描)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                </tr>
+                                <tr>
+                                    <td rowspan="8">3000</td>
+                                    <td rowspan="8">tcp</td>
+                                    <td rowspan="8">--</td>
+                                    <td rowspan="8">--</td>
+                                            <td class="tal">
+                                                <span
+                                                    class="high-risk-icon  ">
+                                                    <a href="#115207" onclick="_goto()">
+                                                        SSL/TLS：远程主机支持RSA密钥交换(原理扫描)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class="low-risk-icon ">
+                                                    <a href="#104964" onclick="_goto()">
+                                                        SSL/TLS: 自签名证书
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#100317" onclick="_goto()">
+                                                        服务器支持的SSL加密协议(原理扫描)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#SysDv0230" onclick="_goto()">
+                                                        远程服务器允许SSL会话恢复
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#SysDv0200" onclick="_goto()">
+                                                        获取目标SSL证书过期时间(原理扫描)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#100316" onclick="_goto()">
+                                                        服务器加密通信支持的SSL加密算法(原理扫描)
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#105011" onclick="_goto()">
+                                                        SSL/TLS: 收集并汇报证书详情
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#SysDv0255" onclick="_goto()">
+                                                        允许Traceroute探测
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1">18888</td>
+                                    <td rowspan="1">tcp</td>
+                                    <td rowspan="1">--</td>
+                                    <td rowspan="1">--</td>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon  ">
+                                                    <a href="#SysDv0255" onclick="_goto()">
+                                                        允许Traceroute探测
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">8383</td>
+                                    <td rowspan="2">tcp,http</td>
+                                    <td rowspan="2">--</td>
+                                    <td rowspan="2">--</td>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon  ">
+                                                    <a href="#80225" onclick="_goto()">
+                                                        HTTP Server类型和版本号
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        <tr>
+                                            <td class="tal">
+                                                <span
+                                                    class=" info-icon ">
+                                                    <a href="#SysDv0255" onclick="_goto()">
+                                                        允许Traceroute探测
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>远程扫描</td>
+                                        </tr>
+                                </tr>
+                        </table>
+                    </div>
+                </div>
+                    <div class="box">
+                        <!-- 二级标题 -->
+                        <h2 id="#3.2">
+                            3.2 Web漏洞概况
+                        </h2>
+                        <div class="box-context no-max-height table-container">
+                            <table>
+                                <tr>
+                                    <th>漏洞名称</th>
+                                    <th>数量</th>
+                                    <th>是否加 V</th>
+                                    <th>OWASP类型</th>
+                                    <th>WASC分类</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="box">
+                            <div class="box-context">
+                                <!-- 二级标题 -->
+                                <h2 id="#3.3">
+                                    3.3 漏洞详情
+                                </h2>
+                                <div class="box-context">
+                                        <div class="box-context">
+                                            <div class="container">
+                                                <div class="box">
+                                                    <!-- 二级标题 -->
+                                                    <h3 id="#3.3.1">
+                                                        3.3.1 高危
+                                                    </h3>
+                                                    <div class="box-context">
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.1.1">
+                                                                <div>
+                                                                    3.3.1.1 【主机】SSL/TLS：远程主机支持RSA密钥交换(原理扫描)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>远程主机支持 RSA 密钥交换意味着缺乏前向保密，存在历史流量解密风险，是过时且不推荐使用的配置，建议更新为 ECDHE 等临时密钥交换算法，以增强会话安全性和隐私保护。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:10000,172.23.51.19:3000</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>禁用 RSA key exchange：只支持临时密钥交换算法（如 ECDHE_RSA 或 ECDHE_ECDSA）。
+强制 TLS 1.2 或 TLS 1.3，并优先选择支持前向保密的密码套件，比如：
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>7.5</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>是</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.1.2">
+                                                                <div>
+                                                                    3.3.1.2 【主机】CPython 安全漏洞(CVE-2025-8194)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>CPython是Python基金会的一个用C语言实现的Python解释器。
+CPython存在安全漏洞，该漏洞源于恶意tar文件可能导致无限循环和死锁。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商暂未发布修复措施解决此安全问题，建议使用此软件的用户随时关注厂商主页或参考网址以获取解决办法</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>7.5</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2025-8194</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202507-3503</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-20258194</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                        <!-- 三级标题 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-context">
+                                            <div class="container">
+                                                <div class="box">
+                                                    <!-- 二级标题 -->
+                                                    <h3 id="#3.3.2">
+                                                        3.3.2 中危
+                                                    </h3>
+                                                    <div class="box-context">
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.2.1">
+                                                                <div>
+                                                                    3.3.2.1 【主机】Python 资源管理错误漏洞(CVE-2025-4516)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>Python是Python基金会的一套开源的、面向对象的程序设计语言。该语言具有可扩展、支持模块和包、支持多种平台等特点。
+Python存在资源管理错误漏洞，该漏洞源于使用bytes.decode(unicode_escape)时错误处理不当，可能导致解码错误。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：https://www.python.org/downloads/</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2025-4516</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202505-2158</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-20254516</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.2.2">
+                                                                <div>
+                                                                    3.3.2.2 【主机】CPython 安全漏洞(CVE-2026-0672)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>CPython是Python基金会的一个用C语言实现的Python解释器。
+CPython存在安全漏洞，该漏洞源于用户控制的cookie值和参数可能导致HTTP标头注入。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：https://github.com/python/cpython/tags</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2026-0672</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202601-3159</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-20260672</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.2.3">
+                                                                <div>
+                                                                    3.3.2.3 【主机】Python 安全漏洞(CVE-2025-6069)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>Python是Python基金会的一套开源的、面向对象的程序设计语言。该语言具有可扩展、支持模块和包、支持多种平台等特点。
+Python存在安全漏洞，该漏洞源于处理特制畸形输入时存在二次复杂度问题，可能导致拒绝服务攻击。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：https://www.python.org/downloads/</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>4.3</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2025-6069</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202506-2001</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-20256069</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.2.4">
+                                                                <div>
+                                                                    3.3.2.4 【主机】CPython 安全漏洞(CVE-2025-12781)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>CPython是Python基金会的一个用C语言实现的Python解释器。
+CPython存在安全漏洞，该漏洞源于b64decode、standard_b64decode和urlsafe_b64decode函数始终接受+和/字符，可能导致数据完整性问题。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：https://github.com/python/cpython/tags</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>5.3</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2025-12781</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202601-3361</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-202512781</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.2.5">
+                                                                <div>
+                                                                    3.3.2.5 【主机】CPython 安全漏洞(CVE-2026-1299)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>CPython是Python基金会的一个用C语言实现的Python解释器。
+CPython存在安全漏洞，该漏洞源于email module序列化电子邮件时未正确引用换行符，可能导致标头注入。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：https://www.python.org/</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2026-1299</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202601-3956</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-20261299</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.2.6">
+                                                                <div>
+                                                                    3.3.2.6 【主机】CPython 安全漏洞(CVE-2025-15366)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>CPython是Python基金会的一个用C语言实现的Python解释器。
+CPython存在安全漏洞，该漏洞源于传递用户控制的命令时可能通过换行符注入额外命令。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：https://github.com/python/cpython/tags</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2025-15366</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202601-3166</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-202515366</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.2.7">
+                                                                <div>
+                                                                    3.3.2.7 【主机】CPython 安全漏洞(CVE-2025-11468)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>CPython是Python基金会的一个用C语言实现的Python解释器。
+CPython存在安全漏洞，该漏洞源于折叠仅包含不可折叠字符的电子邮件标头中的长注释时未保留括号，可能导致在用户控制且未清理的地址中注入标头。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：https://github.com/python/cpython/tags</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2025-11468</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202601-3169</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-202511468</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.2.8">
+                                                                <div>
+                                                                    3.3.2.8 【主机】CPython 安全漏洞(CVE-2025-6075)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>CPython是Python基金会的一个用C语言实现的Python解释器。
+CPython 3.15.0之前版本存在安全漏洞，该漏洞源于用户可控值传递给os.path.expandvars时可能导致环境变量扩展性能下降。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：https://github.com/python/cpython/tags</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2025-6075</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202510-4411</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-20256075</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>是</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.2.9">
+                                                                <div>
+                                                                    3.3.2.9 【主机】CPython 安全漏洞(CVE-2025-15367)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>CPython是Python基金会的一个用C语言实现的Python解释器。
+CPython存在安全漏洞，该漏洞源于传递用户控制的命令时可能通过换行符注入额外命令。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：https://github.com/python/cpython/tags</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2025-15367</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202601-3165</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-202515367</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.2.10">
+                                                                <div>
+                                                                    3.3.2.10 【主机】CPython 安全漏洞(CVE-2026-0865)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>CPython是Python基金会的一个用C语言实现的Python解释器。
+CPython存在安全漏洞，该漏洞源于用户控制的包含换行符的标头名称和值可能导致HTTP标头注入。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：https://github.com/python/cpython/tags</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2026-0865</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202601-3158</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-20260865</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.2.11">
+                                                                <div>
+                                                                    3.3.2.11 【主机】CPython 安全漏洞(CVE-2025-15282)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>CPython是Python基金会的一个用C语言实现的Python解释器。
+CPython存在安全漏洞，该漏洞源于解析用户控制的数据URL时允许通过换行符注入标头。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：https://github.com/python/cpython/tags</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2025-15282</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202601-3167</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-202515282</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                        <!-- 三级标题 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-context">
+                                            <div class="container">
+                                                <div class="box">
+                                                    <!-- 二级标题 -->
+                                                    <h3 id="#3.3.3">
+                                                        3.3.3 低危
+                                                    </h3>
+                                                    <div class="box-context">
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.3.1">
+                                                                <div>
+                                                                    3.3.3.1 【主机】OpenSSH 安全漏洞(CVE-2025-61985)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>OpenSSH（OpenBSD Secure Shell）是加拿大OpenBSD开源的一套用于安全访问远程计算机的连接工具。该工具是SSH协议的开源实现，支持对所有的传输进行加密，可有效阻止窃听、连接劫持以及其他网络级的攻击。
+
+OpenSSH 10.1之前版本存在安全漏洞，该漏洞源于ssh:// URI中允许字符，可能导致代码执行。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:22</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：https://www.openssh.com/</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>3.6</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2025-61985</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202510-765</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-202561985</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.3.2">
+                                                                <div>
+                                                                    3.3.3.2 【主机】OpenSSH 安全漏洞(CVE-2025-61984)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>OpenSSH（OpenBSD Secure Shell）是加拿大OpenBSD开源的一套用于安全访问远程计算机的连接工具。该工具是SSH协议的开源实现，支持对所有的传输进行加密，可有效阻止窃听、连接劫持以及其他网络级的攻击。
+
+OpenSSH 10.1之前版本存在安全漏洞，该漏洞源于允许来自命令行和配置文件扩展的用户名包含控制字符，可能导致代码执行。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:22</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：https://www.openssh.com/</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>3.6</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2025-61984</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202510-767</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-202561984</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>是</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.3.3">
+                                                                <div>
+                                                                    3.3.3.3 【主机】CPython 安全漏洞(CVE-2024-3220)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>CPython是Python基金会的一个用C语言实现的Python解释器。
+CPython存在安全漏洞，该漏洞源于在Windows平台上默认使用用户可写的文件路径，可能导致内存错误或文件类型误判。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：https://mail.python.org/archives/list/security-announce@python.org/thread/CDXW34ND2LSAOYAR5N6UNONP4ZBX4D6R/</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>2.3</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-2024-3220</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-202502-1680</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-20243220</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.3.4">
+                                                                <div>
+                                                                    3.3.3.4 【主机】SSL/TLS: 自签名证书
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>此服务的X.509证书链未由公认的证书颁发机构签名。 如果远程主机是可公开访问的主机，则这将使SSL的使用无效，因为任何人都可以对远程主机发起中间人攻击。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:10000,172.23.51.19:3000</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>为此服务购买或生成适当的SSL证书。</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>3.5</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.3.5">
+                                                                <div>
+                                                                    3.3.3.5 【主机】ICMP时间戳检测(原理扫描)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>远程主机响应ICMP时间戳请求。 时间戳回复是回复时间戳消息的ICMP消息。 它由时间戳的发送者发送的始发时间戳以及接收时间戳和发送时间戳组成。 这个信息理论上可以用来开发其他服务中基于时间的弱随机数发生器。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:0</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>过滤外来的ICMP timestamp（类型 13）报文以及外出的ICMP timestamp回复报文</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>2.1</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>CVE编号</th>
+                                                                                    <td>CVE-1999-0524</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNNVD编号</th>
+                                                                                    <td>CNNVD-199708-003</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CNCVE编号</th>
+                                                                                    <td>CNCVE-19990524</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>是</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                        <!-- 三级标题 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-context">
+                                            <div class="container">
+                                                <div class="box">
+                                                    <!-- 二级标题 -->
+                                                    <h3 id="#3.3.4">
+                                                        3.3.4 信息
+                                                    </h3>
+                                                    <div class="box-context">
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.4.1">
+                                                                <div>
+                                                                    3.3.4.1 【主机】SSL/TLS: 收集并汇报证书详情
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>本脚本收集并汇报SSL/TLS证书的详细信息</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:10000,172.23.51.19:3000</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>信息收集，无需关注</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>0.0</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.4.2">
+                                                                <div>
+                                                                    3.3.4.2 【主机】SSH协议支持的算法(原理扫描)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>该脚本检测远程SSH服务支持的算法</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:22</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>该漏洞仅做信息获取，可以不用修复</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>0.0</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.4.3">
+                                                                <div>
+                                                                    3.3.4.3 【主机】获取目标SSL证书过期时间(原理扫描)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>SSL 证书 就是遵守 SSL协议，由受信任的数字证书颁发机构CA，在验证服务器身份后颁发，具有服务器身份验证和数据传输加密功能。\n\n备注：目前支持一个IP跟域名一一对应的使用场景</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:10000,172.23.51.19:3000</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>仅用作信息收集，无需修复</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>是</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.4.4">
+                                                                <div>
+                                                                    3.3.4.4 【主机】服务器支持的SSL加密协议(原理扫描)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>远程连接SSL端口，探测目标服务器支持的SSL加密协议</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:10000,172.23.51.19:3000</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>探测脚本，无需修改</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>0.0</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.4.5">
+                                                                <div>
+                                                                    3.3.4.5 【主机】远程服务器允许SSL会话恢复
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>探测到远程主机允许SSL会话恢复</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:10000,172.23.51.19:3000</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>对SSL会话恢复的检测，可不关注</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>0.0</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.4.6">
+                                                                <div>
+                                                                    3.3.4.6 【主机】SSH版本信息可被获取(原理扫描)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>ssh版本类型和版本可以被远程获取到</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:22</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>建议修改配置文件，隐藏ssh的banner信息</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>0.0</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.4.7">
+                                                                <div>
+                                                                    3.3.4.7 【主机】服务器加密通信支持的SSL加密算法(原理扫描)
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>远程连接SSL端口，探测目标服务器支持的SSL加密算法</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:10000,172.23.51.19:3000</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>探测脚本，无需修改</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>0.0</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.4.8">
+                                                                <div>
+                                                                    3.3.4.8 【主机】允许Traceroute探测
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>使用Traceroute探测来获取扫描器与远程主机之间的路由信息。攻击者可以利用这些信息来了解目标网络的网络拓扑。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:10000,172.23.51.19:8001,172.23.51.19:18888,172.23.51.19:8383,172.23.51.19:9090,172.23.51.19:3000,172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>在防火墙出站规则中禁用echo-reply（type 0）、time-exceeded（type 11）、destination-unreachable（type 3）类型的ICMP包。</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>0.0</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>是</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                            <!-- 三级标题 -->
+                                                            <h4 id="#3.3.4.9">
+                                                                <div>
+                                                                    3.3.4.9 【主机】HTTP Server类型和版本号
+                                                                </div>
+                                                            </h4>
+
+                                                                <div class="table-container">
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th width="120">漏洞描述</th>
+                                                                                    <td>此策略枚举检测HTTP服务器类型，并设置相应KB。</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>影响主机</th>
+                                                                                <td>172.23.51.19:10000,172.23.51.19:8383,172.23.51.19:5010</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>修复建议</th>
+                                                                                    <td>配置您的服务器以使用像'Wintendo httpD w/Dotmatrix display'等替代名称，一定要删除像apache_pb.gif等常见的标志。 如果目前使用的是Apache，您可以通过设置'ServerTokens Prod'来限制从服务器发出的响应头中的信息。</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>CVSS评分</th>
+                                                                                    <td>0.0</td>
+                                                                                </tr>
+                                                                            <tr>
+                                                                                <th>危险插件</th>
+                                                                                    <td>否</td>
+                                                                            </tr>
+                                                                                <tr>
+                                                                                    <th>是否POC</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>是否EXP</th>
+                                                                                    <td>否</td>
+                                                                                </tr>
+                                                                        </table>
+                                                                </div>
+                                                        <!-- 三级标题 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 其他信息 -->
+<div class="block">
+    <div class="container">
+        <div class="box">
+            <!-- 一级标题 -->
+            <h1 id="#4">
+                <div class="h1-title">
+                    4. 其他信息
+                </div>
+                <div class="line"></div>
+            </h1>
+            <div class="box-context">
+                <div class="box">
+                    <!-- 二级标题 -->
+                    <h2 id="#4.1">
+                        4.1 操作系统
+                    </h2>
+                    <div class="box-context">
+                        <div class="table-container">
+                            <table>
+                                <tr>
+                                    <th>操作系统</th>
+                                    <th>版本号</th>
+                                </tr>
+                                        <tr>
+                                            <td>Linux 4.15 - 5.19</td>
+                                            <td>--</td>
+                                        </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- 二级标题 -->
+                    <h2 id="#4.2">
+                        4.2 端口信息
+                    </h2>
+                    <div class="box-context">
+                        <div class="table-container">
+                            <table>
+                                <tr>
+                                    <th>端口</th>
+                                    <th>协议</th>
+                                    <th>服务</th>
+                                    <th>状态</th>
+                                    <th>软件/版本</th>
+                                </tr>
+                                <tr>
+                                    <td>10000</td>
+                                    <td>tcp,http</td>
+                                    <td></td>
+                                    <td>open</td>
+                                    <td>/</td>
+                                </tr>
+                                <tr>
+                                    <td>8001</td>
+                                    <td>tcp</td>
+                                    <td></td>
+                                    <td>open</td>
+                                    <td>/</td>
+                                </tr>
+                                <tr>
+                                    <td>3000</td>
+                                    <td>tcp</td>
+                                    <td></td>
+                                    <td>open</td>
+                                    <td>/</td>
+                                </tr>
+                                <tr>
+                                    <td>9090</td>
+                                    <td>tcp</td>
+                                    <td></td>
+                                    <td>open</td>
+                                    <td>/</td>
+                                </tr>
+                                <tr>
+                                    <td>5432</td>
+                                    <td>tcp</td>
+                                    <td>postgresql</td>
+                                    <td>open</td>
+                                    <td>PostgreSQL DB/15.5 - 15.6</td>
+                                </tr>
+                                <tr>
+                                    <td>18888</td>
+                                    <td>tcp</td>
+                                    <td></td>
+                                    <td>open</td>
+                                    <td>/</td>
+                                </tr>
+                                <tr>
+                                    <td>6379</td>
+                                    <td>tcp</td>
+                                    <td>redis</td>
+                                    <td>open</td>
+                                    <td>Redis key-value store/</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>tcp</td>
+                                    <td></td>
+                                    <td>open</td>
+                                    <td>openssh/10.0</td>
+                                </tr>
+                                <tr>
+                                    <td>8383</td>
+                                    <td>tcp,http</td>
+                                    <td></td>
+                                    <td>open</td>
+                                    <td>/</td>
+                                </tr>
+                                <tr>
+                                    <td>5010</td>
+                                    <td>tcp</td>
+                                    <td></td>
+                                    <td>open</td>
+                                    <td>python/3.12.12</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- 二级标题 -->
+                    <h2 id="#4.3">
+                        4.3 安装软件
+                    </h2>
+                    <div class="box-context">
+                        <div class="table-container">
+                            <table>
+                                <tr>
+                                    <th width="20%">软件名称</th>
+                                    <th>版本号</th>
+                                </tr>
+                                <tr>
+                                    <td>PostgreSQL DB</td>
+                                    <td>15.5 - 15.6</td>
+                                </tr>
+                                <tr>
+                                    <td>Redis key-value store</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>openssh</td>
+                                    <td>10.0</td>
+                                </tr>
+                                <tr>
+                                    <td>python</td>
+                                    <td>3.12.12</td>
+                                </tr>
+                                
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- 二级标题 -->
+                    <h2 id="#4.4">
+                        4.4 Banner信息
+                    </h2>
+                    <div class="box-context">
+                        <div class="table-container">
+                            <table>
+                                <tr>
+                                    <th width="20%">端口</th>
+                                    <th>Banner</th>
+                                </tr>
+                                <tr>
+                                    <td>10000</td>
+                                    <td>/</td>
+                                </tr>
+                                <tr>
+                                    <td>8001</td>
+                                    <td>/</td>
+                                </tr>
+                                <tr>
+                                    <td>3000</td>
+                                    <td>/</td>
+                                </tr>
+                                <tr>
+                                    <td>9090</td>
+                                    <td>/</td>
+                                </tr>
+                                <tr>
+                                    <td>5432</td>
+                                    <td>PostgreSQL DB/15.5 - 15.6</td>
+                                </tr>
+                                <tr>
+                                    <td>18888</td>
+                                    <td>/</td>
+                                </tr>
+                                <tr>
+                                    <td>6379</td>
+                                    <td>Redis key-value store/</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>openssh/10.0</td>
+                                </tr>
+                                <tr>
+                                    <td>8383</td>
+                                    <td>/</td>
+                                </tr>
+                                <tr>
+                                    <td>5010</td>
+                                    <td>python/3.12.12</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="box">
+                        <!-- 二级标题 -->
+                        <h2 id="#4.5">
+                            4.5 Web信息
+                        </h2>
+                        <div class="box-context">
+                            <div class="table-container">
+                                <table>
+                                    <tr>
+                                        <th width="40%">Url地址</th>
+                                        <th width="40%">网站名称</th>
+                                        <th>状态码</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- 附录A -->
+    <div class="block">
+        <div class="container">
+            <div class="box">
+                <!-- 一级标题 -->
+                <h1 id="#附录A 评估标准">
+                    <div class="h1-title">
+                        附录A 评估标准
+                    </div>
+                    <div class="line"></div>
+                </h1>
+                <div class="box-context">
+                        <div class="box">
+                            <!-- 二级标题 -->
+                            <h2 id="#附录A.1 资产等级评估标准">
+                                附录A.1 资产等级评估标准
+                            </h2>
+                            <div class="box-context">
+                                <p class="desc">目前定义有四类风险等级，具体定义依据扫描的漏洞结果根据算法得出风险等级：</p>
+                                <div class="table-container">
+                                    <table>
+                                        <tr>
+                                            <th width="20%">风险等级</th>
+                                            <th class="tal">说明</th>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="emergency-icon">非常危险</span></td>
+                                            <td class="tal">安全评分<span class="emergency">【1-45】</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="high-risk-icon">比较危险</span></td>
+                                            <td class="tal">安全评分<span class="high-risk">【46-57】</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="low-risk-icon">比较安全</span></td>
+                                            <td class="tal">安全评分<span class="low-risk">【58-75】</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="info-icon">非常安全</span></td>
+                                            <td class="tal">安全评分<span class="info">【76-100】</span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <!-- 二级标题 -->
+                            <h2 id="#附录A.2 漏洞等级评估标准">
+                                附录A.2 漏洞等级评估标准
+                            </h2>
+                            <div class="box-context">
+                                <p class="desc">目前定义有五类风险等级，具体定义依据评分系统CVSS V3.0结合实际可能造成的影响评估：</p>
+                                <div class="table-container">
+                                    <table>
+                                        <tr>
+                                            <th width="20%">风险等级</th>
+                                            <th class="tal">说明</th>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="emergency-icon">紧急</span></td>
+                                            <td class="tal">可以直接被利用的漏洞，且利用难度较低。被攻击之后可能对目标的正常运行造成严重影响，或对用户财产及个人信息造成重大损失。
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="high-risk-icon">高危</span></td>
+                                            <td class="tal">被利用之后，造成的影响较大，但直接利用难度较高的漏洞，或本身无法直接攻击，但能为进一步攻击造成极大便利的漏洞
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="medium-risk-icon">中危</span></td>
+                                            <td class="tal">利用难度较高，或满足严格要求才能实现攻击的漏洞，或漏洞本身无法被直接攻击，但能为进一步攻击起较大帮助作用的漏洞
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="low-risk-icon">低危</span></td>
+                                            <td class="tal">无法直接实现攻击，但提供的信息可能让攻击者更容易找到其他安全漏洞。
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="info-icon">信息</span></td>
+                                            <td class="tal">本身对主机安全没有直接影响，提供的信息可能为攻击者提供少量帮助，或可用于其他手段的攻击。
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- 页脚 -->
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <!-- <img src="./static/images/logo.png" height="30" alt="logo" class="logo mr10" />  -->
+            <span class="header-title mr10">明鉴漏洞扫描系统</span>
+            <span class="header-version">V3.0</span>
+        </div>
+    </div>
+</div>
+
+
+<!-- 菜单数据 -->
+
+<script type="text/javascript">
+    const dataTree = parseMenu()
+
+</script>
+
+
+<script type="text/javascript">
+    window.onload = () => {
+        // 文本内容强调样式
+        const descs = document.querySelectorAll('.desc')
+        if (descs?.length > 0) {
+            descs.forEach(processNumber)
+        }
+        // 创建菜单
+        createMenus(".menu-context", dataTree);
+    }
+</script>
+<!-- 网页页脚 -->
+<!-- TODO: 建议使用chrome 浏览器 -->
+</body>
+
+</html>
