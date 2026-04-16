@@ -1,5 +1,5 @@
 # 使用 Python 3.13 官方镜像作为基础镜像（修复CVE-2025-8194等11个CPython漏洞）
-FROM python:3.13-slim
+FROM docker.xuanyuan.run/library/python:3.13-slim
 
 # 设置工作目录
 WORKDIR /app
